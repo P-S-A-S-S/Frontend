@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Multi-CMD Viewer</title>
+        <link rel="stylesheet" href="../css/multi-cmd.css">
+        <!-- <script type="text/javascript" src="../script/name"></script> -->
+</head>
+<body>
+<!-- <header w3-include-html="header.html"></header> -->
+<div class="main">
+        <div class="banner">
+                <h2>Multi-CMD</h2>
+        </div>
+
+        <div>
+                <div class="banner">
+                        <h2>Select endpoins</h2>
+
+                </div>
+                <div class="endpointsDiv"> <!-- class= "opened / closed" -->
+                        <div class="container">
+                                        <cell class="itemSelect">Select</cell>
+                                        <cell class="itemStatus">Status</cell>
+                                        <cell class="itemEndpointID tableSeparator">Endpoint ID</cell>
+                                        <cell class="itemHostname">Hostname</cell>
+                                
+                                        <!-- Aquí es generaràn <div class="trFlex listBot"> per cadascun dels endpoints que estiguin alive-->
+                                        <cell class="tableSeparator"><input type="checkbox"></input></cell>
+                                        <cell>
+                                                <object data="../images/red-dot.svg" type="image/svg+xml" style="height: 16pxs; width: 16px; padding-left: 17px;"></object>
+                                        </cell> <!-- red-dot.svg / green-dot.svg -->
+                                        <cell>e31253-124532</cell>
+                                        <cell class="tableSeparator">Osmar</cell>
+                                        <!-- Separator -->
+                                        <cell class="tableSeparator"><input type="checkbox"></input></cell>
+                                        <cell>
+                                                <object data="../images/green-dot.svg" type="image/svg+xml" style="height: 16px; width: 16px; padding-left: 17px;"></object>
+                                        </cell>
+                                        <cell>e31253-124535</cell>
+                                        <cell class="tableSeparator">Marti</cell>
+                                        <!--- Separator -->
+                        </div>
+                </div>
+        </div>
+
+
+
+
+
+        <div>
+                <div class="banner">
+                        <h2>Command sender</h2>
+                </div>
+                <div class="cmdDiv"> <!-- class= "opened / closed" -->
+                        <input class="mainCmd textboxCmd" type="text" placeholder="Insert Command" text="command"></input>
+                        <button class="mainCmd buttonCmd" type="submit" value="Submit" text="btn">Execute!</button>
+                </div>
+
+        </div>
+        <div>
+                <div class="banner">
+                        <h2>Output result</h2>
+                </div>
+                <div class="endpointsDiv"> <!-- class= "opened / closed" -->
+                        
+                </div>
+        </div>
+</div>
+</body>
+</html>
