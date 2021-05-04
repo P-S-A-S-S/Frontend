@@ -3,7 +3,6 @@
 <head>
         <title>Multi-CMD Viewer</title>
         <link rel="stylesheet" href="../css/multi-cmd.css">
-        <!-- <script type="text/javascript" src="../script/name"></script> -->
 </head>
 <body>
 <!-- <header w3-include-html="header.html"></header> -->
@@ -13,8 +12,8 @@
         </div>
 
         <div>
-                <div class="banner">
-                        <h2>Select endpoins</h2>
+                <div class="banner" id="endpoints">
+                        <h2>Select endpoints</h2>
 
                 </div>
                 <div class="endpointsDiv"> <!-- class= "opened / closed" -->
@@ -45,26 +44,39 @@
 
 
 
-
-
         <div>
-                <div class="banner">
+                <div class="banner" id="commands">
                         <h2>Command sender</h2>
                 </div>
                 <div class="cmdDiv"> <!-- class= "opened / closed" -->
                         <input class="mainCmd textboxCmd" type="text" placeholder="Insert Command" text="command"></input>
-                        <button class="mainCmd buttonCmd" type="submit" value="Submit" text="btn">Execute!</button>
+                        <h3>OR</h3>
+                        <div class="scriptUploadBtn">
+                                <!-- actual upload which is hidden -->
+                                <input type="file" id="actual-btn" hidden/>
+                                <!-- name of file chosen -->
+                                <span id="file-chosen">No .sh script loaded</span>
+                                <!-- our custom upload button -->
+                                <label for="actual-btn">Load File</label>
+                        </div>
+                        <button class="mainCmd buttonCmd" type="submit" value="Submit" text="btn">Send</button>
                 </div>
 
         </div>
+
+
+
         <div>
-                <div class="banner">
+                <div class="banner" id="output">
                         <h2>Output result</h2>
                 </div>
-                <div class="endpointsDiv"> <!-- class= "opened / closed" -->
+                <div class="outputDiv"> <!-- class= "opened / closed" -->
                         
                 </div>
         </div>
 </div>
 </body>
+<script type="text/javascript" src="../scripts/drop-down.js"></script>
+<script type="text/javascript" src="../scripts/inputfile.js"></script>
+
 </html>
