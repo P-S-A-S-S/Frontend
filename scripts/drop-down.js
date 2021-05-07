@@ -1,6 +1,6 @@
 const endpoints = document.getElementById('endpoints');
 const commands = document.getElementById('commands');
-//const output = document.getElementById('output');
+const output = document.getElementById('output');
 
 endpoints.addEventListener('click', function(){
     var tag = endpoints.parentNode.children[1];
